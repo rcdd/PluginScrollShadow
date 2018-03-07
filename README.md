@@ -3,12 +3,12 @@ This package contains the Scroll Shadow Plugin.
 
 Check the [demo](https://rcdd.github.io/PluginScrollShadow/).
 
-##Table of Contents
+## Table of Contents
 1. Introduction
 	* [What is Scroll Shadow Plugin](#intro)
 2. How install
-	* [Prerequisites] (#requesits)
-	* [Installation] (#installation)
+	* [Prerequisites](#requesits)
+	* [Installation](#installation)
 3. Examples
 	* [Base](#base)
 	* [With external header and footer](#external)
