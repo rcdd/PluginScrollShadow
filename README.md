@@ -7,7 +7,7 @@ Check the [demo](https://rcdd.github.io/PluginScrollShadow/).
 1. Introduction
 	* [What is Scroll Shadow Plugin](#intro)
 2. How install
-	* [Prerequisites](#requesits)
+	* [Prerequisites](#requisites)
 	* [Installation](#installation)
 3. Examples
 	* [Base](#base)
@@ -31,7 +31,7 @@ The Scroll Shadow Plugin applies shadows to a scrollable container upper and low
 This gives the user a visual information that there is hidden content above or below the container visible area. 
 The shadows are only visible when there is hidden content.
 
-## Test Prerequisites <a name="requisits">
+## <a name="requisites"> Test Prerequisites
 
 ### [Node.js](https://nodejs.org/en/download/)
 
@@ -53,7 +53,7 @@ From the command line (Windows, Mac or Linux), please execute the following comm
 npm install --global gulp-cli
 ```
 
-## Installation <a name="installation">
+## <a name="installation"> Installation
 
 Clone or download this project. From the project directory run the command `npm install`.
 
