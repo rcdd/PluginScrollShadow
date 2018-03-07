@@ -24,6 +24,8 @@ Check the [demo](https://rcdd.github.io/PluginScrollShadow/).
 	* [HTML attributes](#html-attributes)
 7. Notes
 	* [Important](#notes)
+8. [How Contribuite](#howcontribuite)
+9. [Team](#team)
 
 ---
 ## <a name="intro"></a>Introduction
@@ -69,7 +71,7 @@ browser should open a window with the project running from [http://localhost:300
 ```html
 <div data-plugin-init="PluginScrollShadow"
 	style="height: 100px; overflow: auto">
-	<div class="ncpp-plugin-scroll-shadow_wrapper">
+	<div class="plugin-scroll-shadow_wrapper">
 		THIS<br />
 		IS<br />
 		A<br/>
@@ -84,14 +86,14 @@ browser should open a window with the project running from [http://localhost:300
 ### <a name="external"></a> With external header and footer
 
 ```html
-<div class="ncpp-plugin-scroll-header">
+<div class="plugin-scroll-header">
 <b>HEADER</b>
 </div>
 <div data-plugin-init="PluginScrollShadow"
-	data-plugin-shadow-header="ncpp-plugin-scroll-header"
-	data-plugin-shadow-footer="ncpp-plugin-scroll-footer"
+	data-plugin-shadow-header="plugin-scroll-header"
+	data-plugin-shadow-footer="plugin-scroll-footer"
 	style="height: 100px; overflow: auto">
-	<div class="ncpp-plugin-scroll-shadow_wrapper">
+	<div class="plugin-scroll-shadow_wrapper">
 		THIS<br />
 		IS<br />
 		A<br/>
@@ -101,7 +103,7 @@ browser should open a window with the project running from [http://localhost:300
 		SHADOW<br />
 	</div>
 </div>
-<div class="ncpp-plugin-scroll-footer">
+<div class="plugin-scroll-footer">
 <b>FOOTER</b>
 </div>
 ```
@@ -112,7 +114,7 @@ browser should open a window with the project running from [http://localhost:300
 <div data-plugin-init="PluginScrollShadow"
 	data-plugin-shadow-height="20"
 	style="height: 100px; overflow: auto">
-	<div class="ncpp-plugin-scroll-shadow_wrapper">
+	<div class="plugin-scroll-shadow_wrapper">
 		THIS<br />
 		IS<br />
 		A<br/>
@@ -130,7 +132,7 @@ browser should open a window with the project running from [http://localhost:300
 <div data-plugin-init="PluginScrollShadow"
 	data-plugin-shadow-initial-color="rgba(255, 198, 157, .5)"
 	style="height: 100px; overflow: auto">
-	<div class="ncpp-plugin-scroll-shadow_wrapper">
+	<div class="plugin-scroll-shadow_wrapper">
 		THIS<br />
 		IS<br />
 		A<br/>
@@ -148,7 +150,7 @@ browser should open a window with the project running from [http://localhost:300
 <div data-plugin-init="PluginScrollShadow"
 	data-plugin-shadow-initial-color="#de3723"
 	style="height: 100px; overflow: auto">
-	<div class="ncpp-plugin-scroll-shadow_wrapper">
+	<div class="plugin-scroll-shadow_wrapper">
 		THIS<br />
 		IS<br />
 		A<br/>
@@ -167,7 +169,7 @@ browser should open a window with the project running from [http://localhost:300
 	data-plugin-shadow-initial-color="rgba(50, 129, 232, .5)"
 	data-plugin-shadow-final-color="rgba(50, 129, 232, .1)"
 	style="height: 100px; overflow: auto">
-	<div class="ncpp-plugin-scroll-shadow_wrapper">
+	<div class="plugin-scroll-shadow_wrapper">
 		THIS<br />
 		IS<br />
 		A<br/>
@@ -185,12 +187,12 @@ browser should open a window with the project running from [http://localhost:300
 
 | Class | Description |
 | --- | --- |
-| `ncpp-plugin-scroll-shadow` | Scroll Shadow Plugin root element. |
-| `ncpp-plugin-scroll-shadow__scroller` | Scrollable container content wrapper element. |
-| `ncpp-plugin-scroll-shadow__scroller__before` | Top scroll shadow element. |
-| `ncpp-plugin-scroll-shadow__scroller__after` | Bottom scroll shadow element. |
-| `ncpp-plugin-scroll-shadow__header` | Header scroll shadow element (When defined in an HTML Attribute). |
-| `ncpp-plugin-scroll-shadow__footer` | Footer scroll shadow element (When defined in an HTML Attribute). |
+| `plugin-scroll-shadow` | Scroll Shadow Plugin root element. |
+| `plugin-scroll-shadow__scroller` | Scrollable container content wrapper element. |
+| `plugin-scroll-shadow__scroller__before` | Top scroll shadow element. |
+| `plugin-scroll-shadow__scroller__after` | Bottom scroll shadow element. |
+| `plugin-scroll-shadow__header` | Header scroll shadow element (When defined in an HTML Attribute). |
+| `plugin-scroll-shadow__footer` | Footer scroll shadow element (When defined in an HTML Attribute). |
 
 ## Javascript ES2015
 
@@ -220,31 +222,29 @@ Properties can be defined through HTML data attributes.
 
 ##  <a name="notes"></a>  Notes
 When is used external header and/or footer, this parent element position will be converted to 'relative'.
-## Contributing
 
-1. Fork this project: [https://github.com/Mteixeira88/css-variables-IE-script](https://github.com/Mteixeira88/css-variables-IE-script)
+## <a name="howcontribuite"></a>  Contributing
+
+1. Fork this project: [https://github.com/rcdd/PluginScrollShadow](https://github.com/rcdd/PluginScrollShadow)
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
-
+## <a name="team"></a> Team
 ## Author
+**Ruben Domingues**
+* <https://github.com/rcdd>
+
+### Contributors
 **Miguel Teixeira**
 * <https://github.com/Mteixeira88>
 
-### Contributors
-**Mauro Reis**
-* <https://github.com/maurovieirareis>
-
-**Abel Lopes**
-* <https://github.com/abelflopes>
-
 ### Project forked from
-* <https://github.com/andreros/typescript-boilerplate>
+* <https://github.com/Mteixeira88/css-variables-IE-plugin>
 
-**André Rosa**
-* <https://github.com/andreros/>
+**Miguel Teixeira**
+* <https://github.com/Mteixeira88>
 
 ## License
 
