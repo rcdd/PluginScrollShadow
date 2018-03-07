@@ -1,0 +1,72 @@
+@mixin gradient-linear($top, $bottom, $direction: bottom, $startAt:0%, $property: background-color) {
+	#{$property}: $top; /* Old browsers */
+	#{$property}: -webkit-gradient(linear, left top, left bottom, color-stop($startAt, $top), color-stop(100%, $bottom)); /* Chrome,Safari4+ */
+	#{$property}: linear-gradient(to $direction, $top $startAt, $bottom 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=0); /* IE6-9 */
+}
+
+:root {
+	--plugin-shadow-height: 8px;
+	--plugin-shadow-top-maxHeight: 0;
+	--plugin-shadow-bottom-maxHeight: 0;
+	--plugin-shadow-offset-top: 0;
+	--plugin-shadow-offset-bottom: 0;
+	--plugin-shadow-initial-backgroundColor: rgba(84, 84, 84, .1);
+	--plugin-shadow-final-backgroundColor: rgba(255, 255, 255, 0);
+}
+
+.plugin-scroll-shadow {
+	&__scroller {
+		display: flex;
+		position: relative;
+		overflow-y: auto;
+
+		&__before {
+			position: absolute;
+			height: var(--plugin-shadow-height);
+			top: var(--plugin-shadow-offset-top);
+			width: 100%;
+			left: 0;
+			max-height: var(--plugin-shadow-top-maxHeight);
+			@include gradient-linear(var(--plugin-shadow-initial-backgroundColor),
+			var(--plugin-shadow-final-backgroundColor), bottom, 0%, $property: background);
+			transition: max-height .1s linear;
+		}
+
+		&__after {
+			position: absolute;
+			height: var(--plugin-shadow-height);
+			width: 100%;
+			left: 0;
+			bottom: var(--plugin-shadow-offset-bottom);
+			max-height: var(--plugin-shadow-bottom-maxHeight);
+			@include gradient-linear(var(--plugin-shadow-initial-backgroundColor),
+			var(--plugin-shadow-final-backgroundColor), top, 0%, $property: background);
+			transition: max-height .1s linear;
+		}
+	}
+}
+
+.plugin-scroll-shadow__header {
+	position: absolute;
+	height: var(--plugin-shadow-height);
+	top: 100%;
+	width: 100%;
+	left: 0;
+	max-height: var(--plugin-shadow-top-maxHeight);	
+	@include gradient-linear(var(--plugin-shadow-initial-backgroundColor),
+	var(--plugin-shadow-final-backgroundColor), bottom, 0%, $property: background);
+	transition: max-height .1s linear;
+}
+
+.plugin-scroll-shadow__footer {
+	position: absolute;
+	height: var(--plugin-shadow-height);
+	bottom: 100%;
+	width: 100%;
+	left: 0;
+	max-height: var(--plugin-shadow-bottom-maxHeight);
+	@include gradient-linear(var(--plugin-shadow-initial-backgroundColor),
+	var(--plugin-shadow-final-backgroundColor), top, 0%, $property: background);
+	transition: max-height .1s linear;
+}

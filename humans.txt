@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Ruben Domingues -- Frond End Developer -- https://github.com/rcdd
+    Miguel Teixeira -- Frond End Developer -- https://github.com/Mteixeira88
+    Mauro Reis Vieira -- Frond End Developer -- https://twitter.com/mauroreisvieira
+
+# THANKS
+    Mom and Dad
+
+# TECHNOLOGY COLOPHON
+    HTML5, CSS3, JAVASCRIPT

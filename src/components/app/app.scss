@@ -1,0 +1,41 @@
+.app {
+    &_body{
+        &_title{
+            position: relative;
+            padding: 20px;
+            font-size: 1.5em;
+            top: 15px;
+        }
+
+        &_shadow {
+            position: relative;
+            overflow-y: auto;
+            width: 80%;
+            max-width: 1000px;
+            margin-left: 10%;
+
+            &_base {
+                height: 100px;
+            }
+
+            &_headerfooter{
+                &_header{
+                    text-align: center;
+                    border: 1px solid grey;
+                }
+
+                &_wrapper{
+                    position: relative;
+                    height: 100px;
+                    overflow-y: auto;
+                }
+
+                &_footer{
+                    text-align: center;
+                    border: 1px solid grey;
+                }
+                
+            }
+        }   
+    }
+}

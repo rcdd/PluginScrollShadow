@@ -1,0 +1,29 @@
+{{> components/header/header}} {{#app}}
+<div class="app__body">
+    <div class="app_body_title">Base</div>
+    <div class="app_body_shadow app_body_shadow_base" data-plugin-init="PluginScrollShadow">
+        {{text}}
+    </div>
+    <div class="app_body_title">With custom shadow height</div>
+    <div class="app_body_shadow app_body_shadow_base" data-plugin-init="PluginScrollShadow" data-plugin-shadow-height="20px">
+        {{text}}
+    </div>
+    <div class="app_body_title">With custom shadow color</div>
+    <div class="app_body_shadow app_body_shadow_base" data-plugin-init="PluginScrollShadow" data-plugin-shadow-initial-color="#007ACC">
+        {{text}}
+    </div>
+    <div class="app_body_title">With header and footer</div>
+    <div class="app_body_shadow app_body_shadow_headerfooter">
+        <div class="app_body_shadow_headerfooter_header">
+            <h5>HEADER</h5>
+        </div>
+        <div class="app_body_shadow_headerfooter_wrapper" data-plugin-init="PluginScrollShadow" data-plugin-shadow-header="app_body_shadow_headerfooter_header"
+            data-plugin-shadow-footer="app_body_shadow_headerfooter_footer">
+            {{text}}
+        </div>
+        <div class="app_body_shadow_headerfooter_footer">
+            <h5>FOOTER</h5>
+        </div>
+    </div>
+</div>
+{{/app}}
